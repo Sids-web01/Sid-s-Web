@@ -1,350 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidique's Portfolio</title>
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    
 </head>
-
 <body>
-    <header>
-        <div class="container">
-            <a href="#" class="logo">Sid's Web</a>
-        </div>
-
+    <header class="active">
+        <a href="#" class="logo">Sidique.</a>
+        <img src="bars.png" id="menu-icon">
         <nav>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#service">Services</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-
-            <div class="hamburger" id="hamburger">
-                <div class="bar top-bar"></div>
-                <div class="bar mid-bar"></div>
-                <div class="bar bot-bar"></div>
-            </div>
-
-
+            <a href="#" class="active">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Resume</a>
+            <a href="#">Contact</a>
         </nav>
     </header>
-    <section id="home" class="section">
-        <div class="home-content">
-            <h1 class="name-intro">Hi! I'm <span>Sidique</span></h1>
-            <!-- Place this in your HTML file -->
-            <span class="css-typing">A Multi- <span class="span-in">Developer</span></span>
-            <!-- <h2 class="typing-effect" id="typing-text">Multi-Developer</h2> -->
-            <p class="paragraph-intro">I create exceptional digital experiences through clean code and innovative
-                design. Transforming ideas into reality is my passion.</p>
-
-            <div class="action-btn">
-                <button class="btn1"><a href="#contact">Let's Work Together</a></button>
-                <button class="btn2"><a href="#service">View My Work</a></button>
-            </div>
-
+    <div class="bars-box active">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+    </div>
+    <section class="home active">
+        <div class="home-detail">
+            <h1>Sidique Kamara</h1>
+            <h2>I'm a
+                <span style="--i:4;" data-text="Coder">Coder</span>
+                <span style="--i:3;" data-text="Microsoft Tutor">Microsoft Tutor</span>
+                <span style="--i:2;" data-text="Database Developer">Database Developer</span>
+                <span style="--i:1;" data-text="Web Games Developer ">Web Games Developer </span>
+            </h2>
+            <p>Welcome to my portfolio, i am Sidique, a multi-developer who specialized in making customers feel satisfied with my on time delivery of projects and facinating style of work.
+                still have doubts? Feel free to call for a demo
+            </p>
+                <div class="btn-sci">
+                    <a href="#" class="btn">Download CV</a>
+                    <div class="sci">
+                        <a href="https://sids-web01.github.io/"><img src="github.png" class="bx bxl-github"></a>
+                        <a href="#"><img src="tiktok.png" class="bx bxl-tiktok"></a>
+                        <a href="#"><img src="whatapp.png" class="bx bxl-youtube"></a>
+                    </div>
+                </div>
 
         </div>
-    </section>
-
-    <section id="service" class="section">
-        <div class="service-content">
-            <div class="service-top">
-                <h2>My <span>Services</span></h2>
-                <p> I offer a range of services to help bring your digital vision to life with creativity and technical
-                    expertise.</p>
-            </div>
-
-            <div class="service-box">
-                <div class="service-card" id="card1">
-                    <div class="service-icon">
-                        <i class="ri-code-line ri-xl text-primary"></i>
-
-
-                    </div>
-                    <h3>Web Development</h3>
-                    <p>Custom, responsive websites built with modern technologies and best practices for optimal
-                        performance and user experience.</p>
-
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="main.png.jpg">
                 </div>
-                <div class="service-card" id="card2">
-                    <div class="service-icon">
-                        <i class="ri-smartphone-line ri-xl text-primary"></i>
-
-
-
-                    </div>
-                    <h3>App Development</h3>
-                    <p>
-                        Native and cross-platform mobile applications that provide seamless experiences across iOS
-                        and Android devices.
-                    </p>
-
-
-                </div>
-                <div class="service-card" id="card3">
-                    <div class="service-icon">
-                        <i class="ri-palette-line ri-xl text-primary"></i>
-
-
-                    </div>
-                    <h3>UI/UX Design</h3>
-                    <p>
-                        Intuitive, beautiful interfaces that enhance user engagement and satisfaction while meeting
-                        business objectives.
-                    </p>
-
-                </div>
-                <div class="service-card" id="card4">
-                    <div class="service-icon">
-                        <i class="ri-server-line ri-xl text-primary"></i>
-
-
-
-                    </div>
-                    <h3>Backend Development</h3>
-                    <p>
-                        Robust, scalable server solutions with secure APIs, database design, and efficient data
-                        management systems.
-                    </p>
-
-                </div>
-                <div class="service-card" id="card5">
-                    <div class="service-icon">
-                        <i class="ri-shopping-cart-line ri-xl text-primary"></i>
-
-
-
-                    </div>
-                    <h3>E-Commerce Solutions</h3>
-                    <p>
-                        Custom online stores with secure payment gateways, inventory management, and optimized
-                        checkout processes.
-                    </p>
-
-                </div>
-                <div class="service-card" id="card6">
-                    <div class="service-icon">
-                        <i class="ri-cloud-line ri-xl text-primary"></i>
-
-
-
-                    </div>
-                    <h3>Cloud Services</h3>
-                    <p>
-                        Deployment, management, and optimization of applications on cloud platforms for reliability
-                        and scalability.
-                    </p>
-
-                </div>
-
             </div>
 
         </div>
     </section>
+    <section class="services">
+        <h2 class="heading">My<span>Services</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <div class="icon">
+                    <img src="s.png" alt="code icon" class="bx bx-code-alt">
+                    <a href="#"> <img src="right.png" alt="back arrow icon" class="bx bx-arrow-back"></a>
+                </div>
+                <h3>Web Development</h3>
+                <p>I tend to unique create portfolios for personal and business uses. 
+                </p>
 
-    <section id="skills" class="section">
-        <div class="skills-content">
-            <div class="skills-top">
-                <h2>My <span>Skills</span></h2>
-                <p>A comprehensive overview of my technical expertise and proficiency in various technologies.</p>
             </div>
-            <div class="skills-box">
-                <div class="skills-card">
-                    <div class="skills-icon">
-                        <i class="ri-html5-fill icon"></i>
-
-                    </div>
-                    <h3 class="icon-name">HTML</h3>
-
+            <div class="services-box">
+                <div class="icon">
+                    <img src="s.png" alt="code icon" class="bx bx-code-alt">
+                    <a href="#"> <img src="right.png" alt="back arrow icon" class="bx bx-arrow-back"></a>
                 </div>
-                <div class="skills-card">
-                    <div class="skills-icon">
-                        <i class="ri-css3-fill icon"></i>
+                <h3>Microsoft Packages</h3>
+                <p>I also teach Microsoft Packages with well structured and organized PDF notes, and at your convienient time.
+                </p>
 
-                    </div>
-                    <h3 class="icon-name">CSS</h3>
-
+            </div>
+            <div class="services-box">
+                <div class="icon">
+                    <img src="s.png" alt="code icon" class="bx bx-code-alt">
+                    <a href="#"> <img src="right.png" alt="back arrow icon" class="bx bx-arrow-back"></a>
                 </div>
-                <div class="skills-card">
-                    <div class="skills-icon">
-                        <i class="ri-javascript-fill icon"></i>
+                <h3>Web Games</h3>
+                <p>I build web games that are not only fun but great for learning also. Like dice rolls and math Quizes
+                </p>
 
-                    </div>
-                    <h3 class="icon-name">JavaScript</h3>
-
+            </div>
+            <div class="services-box">
+                <div class="icon">
+                    <img src="s.png" alt="code icon" class="bx bx-code-alt">
+                    <a href="#"> <img src="right.png" alt="back arrow icon" class="bx bx-arrow-back"></a>
                 </div>
-                <div class="skills-card">
-                    <div class="skills-icon">
-                        <i class="ri-github-fill icon"></i>
+                <h3>Database Development</h3>
+                <p>I Developed Offline Databases for schools, hospitals, churches and more, these are very user friendly and easy to use
+                </p>
 
-
-                    </div>
-                    <h3 class="icon-name">GitHub</h3>
-
+            </div>
+            <div class="services-box">
+                <div class="icon">
+                    <img src="s.png" alt="code icon" class="bx bx-code-alt">
+                    <a href="#"> <img src="right.png" alt="back arrow icon" class="bx bx-arrow-back"></a>
                 </div>
-                <div class="skills-card">
-                    <div class="skills-icon">
-                        <i class="ri-microsoft-fill icon"></i>
+                <h3>Graphics</h3>
+                <p>I design and edit pictures, flyers, invitation and more
+                </p>
 
-                    </div>
-                    <h3 class="icon-name">Microsoft Packages</h3>
-
+            </div>
+            <div class="services-box">
+                <div class="icon">
+                    <img src="s.png" alt="code icon" class="bx bx-code-alt">
+                    <a href="#"> <img src="right.png" alt="back arrow icon" class="bx bx-arrow-back"></a>
                 </div>
-                <div class="skills-card">
-                    <div class="skills-icon">
-                        <i class="ri-reactjs-line icon"></i>
+                <h3>Presentations</h3>
+                <p>i also create easy and amazing Presentations at affordable prizes,
+                </p>
 
-                    </div>
-                    <h3>React</h3>
-
+            </div>
+            <div class="services-box">
+                <div class="icon">
+                    <img src="s.png" alt="code icon" class="bx bx-code-alt">
+                    <a href="#"> <img src="right.png" alt="back arrow icon" class="bx bx-arrow-back"></a>
                 </div>
-                <div class="skills-card">
-                    <div class="skills-icon">
-                        <i class="ri-nodejs-fill icon"></i>
+                <h3>Computer Studies Tutor</h3>
+                <p>I also teach computer studies at affordable cost and reasonable time</p>
+                   
 
-                    </div>
-                    <h3 class="icon-name">C++</h3>
-
+            </div>
+            <div class="services-box">
+                <div class="icon">
+                    <img src="s.png" alt="code icon" class="bx bx-code-alt">
+                    <a href="#"> <img src="right.png" alt="back arrow icon" class="bx bx-arrow-back"></a>
                 </div>
-                <div class="skills-card">
-                    <div class="skills-icon">
-                        <i class="ri-figma-fill icon"></i>
+                <h3>Database Development</h3>
+                <p>I Developed Offline Databases for schools, hospitals, churches and more, these are very user friendly and easy to use
+                </p>
 
+            </div>
+            <div class="services-box">
+                <div class="icon">
+                    <img src="s.png" alt="code icon" class="bx bx-code-alt">
+                    <a href="#"> <img src="right.png" alt="back arrow icon" class="bx bx-arrow-back"></a>
+                </div>
+                <h3>Graphics</h3>
+                <p>I design and edit pictures, flyers, invitation and more
+                </p>
+
+            </div>
+            <div class="services-box">
+                <div class="icon">
+                    <img src="s.png" alt="code icon" class="bx bx-code-alt">
+                    <a href="#"> <img src="right.png" alt="back arrow icon" class="bx bx-arrow-back"></a>
+                </div>
+                <h3>Presentations</h3>
+                <p>i also create easy and amazing Presentations at affordable prizes,
+                </p>
+
+            </div>
+            <div class="services-box">
+                <div class="icon">
+                    <img src="s.png" alt="code icon" class="bx bx-code-alt">
+                    <a href="#"> <img src="right.png" alt="back arrow icon" class="bx bx-arrow-back"></a>
+                </div>
+                <h3>Computer Studies Tutor</h3>
+                <p>I also teach computer studies at affordable cost and reasonable time</p>
+                   
+
+            </div>
+            
+        </div>
+
+    </section>
+
+    <section class="resume">
+        <div class="resume-container">
+            <div class="resume-box">
+                <h2>Why Hire Me?</h2>
+                <p class="desc">I can develop your projects to your every need and on time </p>
+                <button class="resume-btn active">Experience</button>
+                <button class="resume-btn">Education</button>
+                <button class="resume-btn">skills</button>
+                <button class="resume-btn">About Me</button>
+            </div>
+            <div class="resume-box">
+                <div class="resume-detail experience active" >
+                    <h2 class="heading">My <span>Experience</span></h2>
+                    <p class="desc">Below are some of my experience i gained over the years</p>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <p class="year">2023 - present</p>
+                            <h3>Frontend Developer</h3>
+                            <p class="company">Leo Tech</p>
+                            <p class="desc">Frontend Developer at Leo Tech from 2023 till date</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2023 - present</p>
+                            <h3>Microsoft Tutor</h3>
+                            <p class="company">Leo Tech</p>
+                            <p class="desc">Microsoft Tutor at Leo Tech from 2023 till date with certificates of best staff </p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2022 - Present</p>
+                            <h3>Games and Quiz Developer</h3>
+                            <p class="company">FreeLance</p>
+                            <p class="desc">Developed many quiz for schools, debate and quiz competition. And Learning Games for kids</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2023 - present</p>
+                            <h3>Database Developer</h3>
+                            <p class="company">FreeLance And Leo Tech</p>
+                            <p class="desc">Developed Databases for school, mosque, churches and hospitals</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2022 - 2024</p>
+                            <h3>Graphics</h3>
+                            <p class="company">FreeLance</p>
+                            <p class="desc">Design and edit Pictures on Freelance</p>
+                        </div>
+                       
+                    </div>
+                   
+                
+                </div>
+                <div class="resume-detail education">
+                    <h2 class="heading">My <span>Education</span></h2>
+                    <p class="desc">Below Are some of my educational journeys</p>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <p class="year">2023</p>
+                            <h3>Programming Course</h3>
+                            <p class="company">Online Course</p>
+                            <p class="desc">Obtained Certificate from Courses online</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2023-2024</p>
+                            <h3>Web Development</h3>
+                            <p class="company">Leo Tech</p>
+                            <p class="desc">Also obtained education from From Leo Tech with Certificates</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2024</p>
+                            <h3>Database Course</h3>
+                            <p class="company">Leo Teach</p>
+                            <p class="desc">Got Certificates from Leo Tech
+                            </p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2022</p>
+                            <h3>Graphics</h3>
+                            <p class="company">Online Course</p>
+                            <p class="desc">Learned from Online Courses</p>
+                        </div>
+                       
 
                     </div>
-                    <h3 class="icon-name">Python</h3>
-
+                   
+                </div>
+                <div class="resume-detail skills">
+                    <h2 class="heading">My <span>Skills</span></h2>
+                    <p class="desc">I obtained the following skills over the years of learning</p>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <img src="html.png" alt="">
+                            <span>HTML5</span>
+                        </div>
+                        <div class="resume-item">
+                            <img src="css.png" alt="">
+                            <span>CSS3</span>
+                        </div>
+                        <div class="resume-item">
+                            <img src="js.png" alt="">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="resume-item">
+                            <img src="access.png" alt="">
+                            <span>Microsoft Access</span>
+                        </div>
+                        <div class="resume-item">
+                            <img src="excel.png" alt="">
+                            <span>Microsoft Excel</span>
+                        </div>
+                        <div class="resume-item">
+                            <img src="wrod.png" alt="">
+                            <span>Microsoft Word</span>
+                        </div>
+                        <div class="resume-item">
+                            <img src="power.png" alt="">
+                            <span>Powerpoint</span>
+                        </div>
+                        <div class="resume-item">
+                            <img src="publisher.png" alt="">
+                            <span>Publisher</span>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="resume-detail about">
+                    <h2 class="heading">About <span>Me</span></h2>
+                    <p class="desc">Below are Some details About me</p>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <p>Name <span>Sidique Kamara</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Gender <span>Male</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Age <span>18 years old</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p> Status <span>Not Married</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>City <span>Freetown</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Nationality <span>Sierra Leonean</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Experience <span>3 Years</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Full Time <span>Available</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Freelance <span> Available</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Phone<span> +232 79 72 80 28</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Email <span>Kamaraar@gmail.com</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Language<span> English, Spanish</span></p>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
+            
+           
         </div>
     </section>
-    <section id="contact" class="section">
-        <div class="contact-content">
-            <div class="contact-top">
-                <h2>Get In <span>Touch</span></h2>
-                <p> Have a project in mind or want to collaborate? Feel free to reach out and let's create something
-                    amazing together.</p>
-
+    <section class="contact">
+        <div class="contact-container">
+            <div class="contact-box">
+                <h2>Let's work Together</h2>
+                <p class="desc">Get in touch to discuss more business propasals</p>
+                    <div class="contact-detail">
+                        <img src="17847648.png" alt="">
+                        <div class="detail">
+                            <p>Phone</p>
+                            <p>+232 79728028</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <img src="contacticon.png" alt="">
+                        <div class="detail">
+                            <p>Email</p>
+                            <p>Kamaraabubakarrsidique@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <img src="17847648.png" alt="">
+                        <div class="detail">
+                            <p>Address</p>
+                            <p>Rokel Waterloo</p>
+                        </div>
+                    </div>
             </div>
             <div class="contact-box">
-                <div class="left-box">
-                    <form id="contact-form">
-                        <div class="relative">
-                            <!-- <label for="name">Your Name</label> -->
-                            <input type="text" id="name" placeholder="Enter Name " required>
-                        </div>
-
-                        <div class="relative">
-                            <!-- <label for="email" >Your Email</label> -->
-                            <input type="email" id="email" placeholder="Enter Email " required>
-                        </div>
-
-                        <div class="relative">
-                            <!-- <label for="message" >Your Message</label> -->
-                            <textarea id="message" rows="5" placeholder=" Enter Message" required></textarea>
-                        </div>
-
-                        <button type="submit" class="submit-btn">
-                            Send Message
-                        </button>
-                    </form>
-
-                </div>
-                <div class="right-box">
-                    <div class="right-top">
-                        <h3>Contact <span>Information</span></h3>
-                        <p>If you have any questions or would like to discuss a project, please don't hesitate to
-                            contact me.</p>
-                        <div class="info-box1">
-                            <div class="info-box">
-                                <div class="contact-icon-box">
-                                    <i class="ri-mail-fill"></i>
-                                </div>
-                                <div class="detail">
-                                    <h4>Email</h4>
-                                    <p>sidique@gmail.com</p>
-                                </div>
-
-
-
-                            </div>
-                            <div class="info-box">
-                                <div class="contact-icon-box">
-                                    <i class="ri-phone-fill"></i>
-                                </div>
-                                <div class="detail">
-                                    <h4>Phone</h4>
-                                    <p>+232 79 72 80 28</p>
-                                </div>
-
-                            </div>
-                            <div class="info-box">
-                                <div class="contact-icon-box">
-                                    <i class="ri-map-pin-2-fill"></i>
-                                </div>
-                                <div class="detail">
-                                    <h4>Location</h4>
-                                    <p>Sierra Leone, Waterloo Rokel</p>
-                                </div>
-
-                            </div>
-                        </div>
-
-
+                <form action="">
+                    <h2 class="heading">Contact <span>Me!</span></h2>
+                    <div class="field-box">
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="email" placeholder="Email Address" required>
+                        <input type="text" placeholder="Phone Number" required>
+                        <input type="text" placeholder="Email Subject" required>
+                        <textarea name="" id="" placeholder="Your Message" required></textarea>
                     </div>
-                    <div class="right-bottom">
-                        <h3>Conect <span>With Me</span></h3>
+                    <button type="submit" class="btn">Send Message</button>
 
-                        <div class="bottom-icons">
-                            <div>
-                                <i class="ri-twitter-x-fill connect-icons"></i>
-                            </div>
-
-                            <div>
-                                <i class="ri-linkedin-box-fill"></i>
-                            </div>
-                            <div>
-                                <i class="ri-tiktok-fill"></i>
-
-                            </div>
-                            <div>
-                                <i class="ri-instagram-fill"></i>
-                            </div>
-                            <div>
-                                <i class="ri-facebook-fill"></i>
-
-                            </div>
-                            <div>
-
-                                <i class="ri-github-fill"></i>
-
-                            </div>
-
-
-
-                        </div>
-
-                    </div>
-
-                </div>
+                </form>
             </div>
         </div>
+
     </section>
+
+
+
 </body>
-<script>
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.querySelector('.nav-links');
-
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navLinks.classList.toggle('active');
-    });
-</script>
-
-
-
+<script src="script.js"></script>
 </html>
