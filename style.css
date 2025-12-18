@@ -1267,25 +1267,25 @@ section {
 }
 #project-image-2{
     background-image: url('amala.png');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     object-fit: cover;
 }
 #project-image-1{
     background-image: url('gigibonta.png');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     object-fit: cover;
 }
 #project-image-3{
     background-image: url('zadet.png');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-    object-fit: cover;
+    object-fit: contain;
 }
 #project-image-4{
     background-image: url('e.png');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-    object-fit: cover;
+    object-fit: contain;
 }
