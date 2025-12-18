@@ -1,399 +1,508 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sid's Web - Crafting Modern Web Experiences</title>
+  <meta name="description" content="Professional web developer specializing in modern web experiences, UI design, and digital creation.">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="active">
-        <a href="#" class="logo">Sidique.</a>
-        <img src="bars.png" id="menu-icon">
-        <nav>
-            <a href="#" class="active">Home</a>
-            <a href="#">Services</a>
-            <a href="#">Resume</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
-    <div class="bars-box active">
-        <div class="bar" style="--i:6;"></div>
-        <div class="bar" style="--i:5;"></div>
-        <div class="bar" style="--i:4;"></div>
-        <div class="bar" style="--i:3;"></div>
-        <div class="bar" style="--i:2;"></div>
-        <div class="bar" style="--i:1;"></div>
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Loading Animation -->
+  <div class="loader">
+    <div class="loader-content">
+      <div class="loader-logo">Sid's Web</div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
     </div>
-    <section class="home active">
-        <div class="home-detail">
-            <h1>Sidique Kamara</h1>
-            <h2>I'm a
-                <span style="--i:4;" data-text="Coder">Coder</span>
-                <span style="--i:3;" data-text="Microsoft Tutor">Microsoft Tutor</span>
-                <span style="--i:2;" data-text="Database Developer">Database Developer</span>
-                <span style="--i:1;" data-text="Web Games Developer ">Web Games Developer </span>
-            </h2>
-            <p>Welcome to my portfolio, i am Sidique, a multi-developer who specialized in making customers feel satisfied with my on time delivery of projects and facinating style of work.
-                still have doubts? Feel free to call for a demo
-            </p>
-                <div class="btn-sci">
-                    <a href="#" class="btn">Download CV</a>
-                    <div class="sci">
-                        <a href="https://sids-web01.github.io/"><img src="github.png" class="bx bxl-github"></a>
-                        <a href="#"><img src="tiktok.png" class="bx bxl-tiktok"></a>
-                        <a href="#"><img src="whatapp.png" class="bx bxl-youtube"></a>
-                    </div>
-                </div>
+  </div>
 
+  <!-- Scroll Indicator -->
+  <div class="scroll-indicator">
+    <div class="scroll-progress"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="#home">Sid's Web</a>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Floating 3D Background Elements -->
+  <div class="floating-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    <div class="shape shape-4"></div>
+    <div class="shape shape-5"></div>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight">Sid</span><br>
+            Crafting Modern<br>
+            <span class="typing-text">Web Experiences</span>
+          </h1>
+          <p class="hero-subtitle">Web Developer • UI Designer • Digital Creator</p>
+          <p class="hero-description">
+            Transforming ideas into stunning digital experiences with cutting-edge technology and creative design.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
         </div>
-        <div class="home-img">
-            <div class="img-box">
-                <div class="img-item">
-                    <img src="main.png.png" alt="Sidique Kamara">
-                </div>
-            </div>
-
+      </div>
+      <div class="hero-image">
+        <div class="hero-avatar">
+          <div class="avatar-glow"></div>
+          <div class="avatar-content">
+            <img src="profile pic.PNG" alt="" class="profile">
+          </div>
         </div>
-    </section>
-    <section class="services">
-        <h2 class="heading">My<span>Services</span></h2>
-        <div class="services-container">
-            <div class="services-box">
-                <div class="icon">
-                    <img src="s.png" alt="code icon" class="bx bx-code-alt">
-                    <a href="#"> <img src="right.png" alt="back arrow icon" class="bx bx-arrow-back"></a>
-                </div>
-                <h3>Web Development</h3>
-                <p>I tend to unique create portfolios for personal and business uses. 
-                </p>
+      </div>
+    </div>
+    <div class="scroll-indicator-hero">
+      <a href="#about">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </div>
+  </section>
 
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Passionate Web Developer & Designer</h3>
+          <p>
+            With over 5 years of experience in web development, I specialize in creating modern, 
+            responsive websites that not only look stunning but also deliver exceptional user experiences. 
+            My passion lies in combining creativity with technical expertise to bring digital visions to life.
+          </p>
+          <p>
+            I stay up-to-date with the latest technologies and design trends, ensuring that every project 
+            I work on is built with modern standards and best practices. From concept to deployment, 
+            I handle every aspect of web development with attention to detail and commitment to excellence.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <h4>50+</h4>
+              <p>Projects Completed</p>
             </div>
-            <div class="services-box">
-                <div class="icon">
-                    <img src="s.png" alt="code icon" class="bx bx-code-alt">
-                    <a href="#"> <img src="right.png" alt="back arrow icon" class="bx bx-arrow-back"></a>
-                </div>
-                <h3>Microsoft Packages</h3>
-                <p>I also teach Microsoft Packages with well structured and organized PDF notes, and at your convienient time.
-                </p>
-
+            <div class="stat">
+              <h4>5+</h4>
+              <p>Years Experience</p>
             </div>
-            <div class="services-box">
-                <div class="icon">
-                    <img src="s.png" alt="code icon" class="bx bx-code-alt">
-                    <a href="#"> <img src="right.png" alt="back arrow icon" class="bx bx-arrow-back"></a>
-                </div>
-                <h3>Web Games</h3>
-                <p>I build web games that are not only fun but great for learning also. Like dice rolls and math Quizes
-                </p>
-
+            <div class="stat">
+              <h4>100%</h4>
+              <p>Client Satisfaction</p>
             </div>
-            <div class="services-box">
-                <div class="icon">
-                    <img src="s.png" alt="code icon" class="bx bx-code-alt">
-                    <a href="#"> <img src="right.png" alt="back arrow icon" class="bx bx-arrow-back"></a>
-                </div>
-                <h3>Database Development</h3>
-                <p>I Developed Offline Databases for schools, hospitals, churches and more, these are very user friendly and easy to use
-                </p>
-
-            </div>
-            <div class="services-box">
-                <div class="icon">
-                    <img src="s.png" alt="code icon" class="bx bx-code-alt">
-                    <a href="#"> <img src="right.png" alt="back arrow icon" class="bx bx-arrow-back"></a>
-                </div>
-                <h3>Graphics</h3>
-                <p>I design and edit pictures, flyers, invitation and more
-                </p>
-
-            </div>
-            <div class="services-box">
-                <div class="icon">
-                    <img src="s.png" alt="code icon" class="bx bx-code-alt">
-                    <a href="#"> <img src="right.png" alt="back arrow icon" class="bx bx-arrow-back"></a>
-                </div>
-                <h3>Presentations</h3>
-                <p>i also create easy and amazing Presentations at affordable prizes,
-                </p>
-
-            </div>
-            <div class="services-box">
-                <div class="icon">
-                    <img src="s.png" alt="code icon" class="bx bx-code-alt">
-                    <a href="#"> <img src="right.png" alt="back arrow icon" class="bx bx-arrow-back"></a>
-                </div>
-                <h3>Computer Studies Tutor</h3>
-                <p>I also teach computer studies at affordable cost and reasonable time</p>
-                   
-
-            </div>
-            <div class="services-box">
-                <div class="icon">
-                    <img src="s.png" alt="code icon" class="bx bx-code-alt">
-                    <a href="#"> <img src="right.png" alt="back arrow icon" class="bx bx-arrow-back"></a>
-                </div>
-                <h3>Database Development</h3>
-                <p>I Developed Offline Databases for schools, hospitals, churches and more, these are very user friendly and easy to use
-                </p>
-
-            </div>
-            <div class="services-box">
-                <div class="icon">
-                    <img src="s.png" alt="code icon" class="bx bx-code-alt">
-                    <a href="#"> <img src="right.png" alt="back arrow icon" class="bx bx-arrow-back"></a>
-                </div>
-                <h3>Graphics</h3>
-                <p>I design and edit pictures, flyers, invitation and more
-                </p>
-
-            </div>
-            <div class="services-box">
-                <div class="icon">
-                    <img src="s.png" alt="code icon" class="bx bx-code-alt">
-                    <a href="#"> <img src="right.png" alt="back arrow icon" class="bx bx-arrow-back"></a>
-                </div>
-                <h3>Presentations</h3>
-                <p>i also create easy and amazing Presentations at affordable prizes,
-                </p>
-
-            </div>
-            <div class="services-box">
-                <div class="icon">
-                    <img src="s.png" alt="code icon" class="bx bx-code-alt">
-                    <a href="#"> <img src="right.png" alt="back arrow icon" class="bx bx-arrow-back"></a>
-                </div>
-                <h3>Computer Studies Tutor</h3>
-                <p>I also teach computer studies at affordable cost and reasonable time</p>
-                   
-
-            </div>
-            
+          </div>
         </div>
+        <div class="about-image">
+          <div class="about-avatar">
+            <i class="fas fa-code"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    </section>
-
-    <section class="resume">
-        <div class="resume-container">
-            <div class="resume-box">
-                <h2>Why Hire Me?</h2>
-                <p class="desc">I can develop your projects to your every need and on time </p>
-                <button class="resume-btn active">Experience</button>
-                <button class="resume-btn">Education</button>
-                <button class="resume-btn">skills</button>
-                <button class="resume-btn">About Me</button>
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Skills & Expertise</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Frontend Development</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="fab fa-html5"></i>
+              <span>HTML5</span>
             </div>
-            <div class="resume-box">
-                <div class="resume-detail experience active" >
-                    <h2 class="heading">My <span>Experience</span></h2>
-                    <p class="desc">Below are some of my experience i gained over the years</p>
-                    <div class="resume-list">
-                        <div class="resume-item">
-                            <p class="year">2023 - present</p>
-                            <h3>Frontend Developer</h3>
-                            <p class="company">Leo Tech</p>
-                            <p class="desc">Frontend Developer at Leo Tech from 2023 till date</p>
-                        </div>
-                        <div class="resume-item">
-                            <p class="year">2023 - present</p>
-                            <h3>Microsoft Tutor</h3>
-                            <p class="company">Leo Tech</p>
-                            <p class="desc">Microsoft Tutor at Leo Tech from 2023 till date with certificates of best staff </p>
-                        </div>
-                        <div class="resume-item">
-                            <p class="year">2022 - Present</p>
-                            <h3>Games and Quiz Developer</h3>
-                            <p class="company">FreeLance</p>
-                            <p class="desc">Developed many quiz for schools, debate and quiz competition. And Learning Games for kids</p>
-                        </div>
-                        <div class="resume-item">
-                            <p class="year">2023 - present</p>
-                            <h3>Database Developer</h3>
-                            <p class="company">FreeLance And Leo Tech</p>
-                            <p class="desc">Developed Databases for school, mosque, churches and hospitals</p>
-                        </div>
-                        <div class="resume-item">
-                            <p class="year">2022 - 2024</p>
-                            <h3>Graphics</h3>
-                            <p class="company">FreeLance</p>
-                            <p class="desc">Design and edit Pictures on Freelance</p>
-                        </div>
-                       
-                    </div>
-                   
-                
-                </div>
-                <div class="resume-detail education">
-                    <h2 class="heading">My <span>Education</span></h2>
-                    <p class="desc">Below Are some of my educational journeys</p>
-                    <div class="resume-list">
-                        <div class="resume-item">
-                            <p class="year">2023</p>
-                            <h3>Programming Course</h3>
-                            <p class="company">Online Course</p>
-                            <p class="desc">Obtained Certificate from Courses online</p>
-                        </div>
-                        <div class="resume-item">
-                            <p class="year">2023-2024</p>
-                            <h3>Web Development</h3>
-                            <p class="company">Leo Tech</p>
-                            <p class="desc">Also obtained education from From Leo Tech with Certificates</p>
-                        </div>
-                        <div class="resume-item">
-                            <p class="year">2024</p>
-                            <h3>Database Course</h3>
-                            <p class="company">Leo Teach</p>
-                            <p class="desc">Got Certificates from Leo Tech
-                            </p>
-                        </div>
-                        <div class="resume-item">
-                            <p class="year">2022</p>
-                            <h3>Graphics</h3>
-                            <p class="company">Online Course</p>
-                            <p class="desc">Learned from Online Courses</p>
-                        </div>
-                       
-
-                    </div>
-                   
-                </div>
-                <div class="resume-detail skills">
-                    <h2 class="heading">My <span>Skills</span></h2>
-                    <p class="desc">I obtained the following skills over the years of learning</p>
-                    <div class="resume-list">
-                        <div class="resume-item">
-                            <img src="html.png" alt="">
-                            <span>HTML5</span>
-                        </div>
-                        <div class="resume-item">
-                            <img src="css.png" alt="">
-                            <span>CSS3</span>
-                        </div>
-                        <div class="resume-item">
-                            <img src="js.png" alt="">
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="resume-item">
-                            <img src="access.png" alt="">
-                            <span>Microsoft Access</span>
-                        </div>
-                        <div class="resume-item">
-                            <img src="excel.png" alt="">
-                            <span>Microsoft Excel</span>
-                        </div>
-                        <div class="resume-item">
-                            <img src="wrod.png" alt="">
-                            <span>Microsoft Word</span>
-                        </div>
-                        <div class="resume-item">
-                            <img src="power.png" alt="">
-                            <span>Powerpoint</span>
-                        </div>
-                        <div class="resume-item">
-                            <img src="publisher.png" alt="">
-                            <span>Publisher</span>
-                        </div>
-                    </div>
-                   
-                </div>
-                <div class="resume-detail about">
-                    <h2 class="heading">About <span>Me</span></h2>
-                    <p class="desc">Below are Some details About me</p>
-                    <div class="resume-list">
-                        <div class="resume-item">
-                            <p>Name <span>Sidique Kamara</span></p>
-                        </div>
-                        <div class="resume-item">
-                            <p>Gender <span>Male</span></p>
-                        </div>
-                        <div class="resume-item">
-                            <p>Age <span>18 years old</span></p>
-                        </div>
-                        <div class="resume-item">
-                            <p> Status <span>Not Married</span></p>
-                        </div>
-                        <div class="resume-item">
-                            <p>City <span>Freetown</span></p>
-                        </div>
-                        <div class="resume-item">
-                            <p>Nationality <span>Sierra Leonean</span></p>
-                        </div>
-                        <div class="resume-item">
-                            <p>Experience <span>3 Years</span></p>
-                        </div>
-                        <div class="resume-item">
-                            <p>Full Time <span>Available</span></p>
-                        </div>
-                        <div class="resume-item">
-                            <p>Freelance <span> Available</span></p>
-                        </div>
-                        <div class="resume-item">
-                            <p>Phone<span> +232 79 72 80 28</span></p>
-                        </div>
-                        <div class="resume-item">
-                            <p>Email <span>Kamaraar@gmail.com</span></p>
-                        </div>
-                        <div class="resume-item">
-                            <p>Language<span> English, Spanish</span></p>
-                        </div>
-                    </div>
-                    
-                </div>
+            <div class="skill-item">
+              <i class="fab fa-css3-alt"></i>
+              <span>CSS3</span>
             </div>
-            
+            <div class="skill-item">
+              <i class="fab fa-js-square"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-react"></i>
+              <span>React</span>
+            </div>
+             <div class="skill-item">
+                <i class="fab fa-node-js"></i>
+              <span>Node.js</span>
+            </div>
            
+          </div>
         </div>
-    </section>
-    <section class="contact">
-        <div class="contact-container">
-            <div class="contact-box">
-                <h2>Let's work Together</h2>
-                <p class="desc">Get in touch to discuss more business propasals</p>
-                    <div class="contact-detail">
-                        <img src="17847648.png" alt="">
-                        <div class="detail">
-                            <p>Phone</p>
-                            <p>+232 79728028</p>
-                        </div>
-                    </div>
-                    <div class="contact-detail">
-                        <img src="contacticon.png" alt="">
-                        <div class="detail">
-                            <p>Email</p>
-                            <p>Kamaraabubakarrsidique@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-detail">
-                        <img src="17847648.png" alt="">
-                        <div class="detail">
-                            <p>Address</p>
-                            <p>Rokel Waterloo</p>
-                        </div>
-                    </div>
+        <div class="skill-category">
+          <h3>Backend & Tools</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="fab fa-node-js"></i>
+              <span>Node.js</span>
             </div>
-            <div class="contact-box">
-                <form action="">
-                    <h2 class="heading">Contact <span>Me!</span></h2>
-                    <div class="field-box">
-                        <input type="text" placeholder="Full Name" required>
-                        <input type="email" placeholder="Email Address" required>
-                        <input type="text" placeholder="Phone Number" required>
-                        <input type="text" placeholder="Email Subject" required>
-                        <textarea name="" id="" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Send Message</button>
+            <div class="skill-item">
+              <i class="fas fa-database"></i>
+              <span>MongoDB</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-git-alt"></i>
+              <span>Git</span>
+            </div>
+             <div class="skill-item">
+                <i class="fas fa-table"></i>
+              <span>Google Sheets</span>
+            </div>
+           
+            
+            <div class="skill-item">
+              <i class="fas fa-mobile-alt"></i>
+              <span>Responsive</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Design & UX</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="fas fa-palette"></i>
+              <span>UI Design</span>
+            </div>
+            <div class="skill-item">
+               <i class="fa-brands fa-figma"></i>
+              <span>Figma</span>
+            </div>
+           
+           
+            <div class="skill-item">
+              <i class="fas fa-eye"></i>
+              <span>Visual Design</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-magic"></i>
+              <span>Animation</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-chart-line"></i>
+              <span>Analytics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                </form>
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card" data-tilt>
+          <div class="project-image" id="project-image-1">
+            <div class="project-placeholder">
+              <i class="fas fa-shopping-cart"></i>
             </div>
+          </div>
+          <div class="project-content">
+            <h3>Gigibonta Restaurant</h3>
+            <p>Responsive restaurant page designed to showcase meals, ice cream, and pizza with a clean layout and engaging user experience and online reservations.</p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Git</span>
+            </div>
+            <div class="project-links">
+              <a href="https://sids-web01.github.io/Gigibonta-Restaurant/" class="btn btn-small btn-primary">Live Demo</a>
+              <!-- <a href="#" class="btn btn-small btn-outline">View Code</a> -->
+            </div>
+          </div>
         </div>
 
-    </section>
+        <div class="project-card" data-tilt>
+          <div class="project-image" id="project-image-2">
+            <div class="project-placeholder">
+                <i class="fas fa-utensils"></i>
+              
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Amala’s Restaurant Website</h3>
+            <p>Responsive restaurant page that showcases the menu, highlights the brand, and provides essential information for customers.</p>
+            <div class="project-tech">
+              <span>HTml</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Git</span>
+            </div>
+            <div class="project-links">
+              <a href="https://sids-web01.github.io/Amaalas-Delight/" class="btn btn-small btn-primary">Live Demo</a>
+              <!-- <a href="#" class="btn btn-small btn-outline">View Code</a> -->
+            </div>
+          </div>
+        </div>
 
+        <div class="project-card" data-tilt>
+          <div class="project-image" id="project-image-3">
+            <div class="project-placeholder">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Zadet Preparatory & International Secondary School</h3>
+            <p>A web-based school management system that allows students to log in, check results, and access academic information.</p>
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Git</span>
+              <span>Node.Js</span>
+              <span>Google Sheets</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-small btn-primary">Live Demo</a>
+              <a href="#" class="btn btn-small btn-outline">View Code</a>
+            </div>
+          </div>
+        </div>
 
+        <div class="project-card" data-tilt>
+          <div class="project-image" id="project-image-4">
+            <div class="project-placeholder">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>E-Commerce Website</h3>
+            <p>A full-stack e-commerce platform with product listings, shopping cart, and secure checkout. Built with modern web technologies for performance and scalability.</p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Vercel</span>
+              <span>Google Sheets</span>
+              <span>Node.Js</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-small btn-primary">Live Demo</a>
+              <!-- <a href="#" class="btn btn-small btn-outline">View Code</a> -->
+            </div>
+          </div>
+        </div>
 
+        <!-- <div class="project-card" data-tilt>
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="fas fa-gamepad"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Interactive Game</h3>
+            <p>Browser-based interactive game with WebGL graphics and real-time multiplayer functionality. Features smooth animations and engaging gameplay.</p>
+            <div class="project-tech">
+              <span>Three.js</span>
+              <span>WebGL</span>
+              <span>Socket.io</span>
+              <span>Canvas</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-small btn-primary">Live Demo</a>
+              <a href="#" class="btn btn-small btn-outline">View Code</a>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- <div class="project-card" data-tilt>
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="fas fa-building"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Corporate Website</h3>
+            <p>Professional corporate website with CMS integration, contact forms, and SEO optimization. Designed for maximum impact and user engagement.</p>
+            <div class="project-tech">
+              <span>WordPress</span>
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>jQuery</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-small btn-primary">Live Demo</a>
+              <a href="#" class="btn btn-small btn-outline">View Code</a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="section-title">Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-palette"></i>
+          </div>
+          <h3>Website Design</h3>
+          <p>Custom website designs that capture your brand identity and engage your audience with stunning visual experiences.</p>
+          <ul>
+            <li>UI/UX Design</li>
+            <li>Responsive Layouts</li>
+            <li>Brand Integration</li>
+            <li>User Research</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Frontend Development</h3>
+          <p>Modern frontend development using the latest technologies to create fast, interactive, and user-friendly web applications.</p>
+          <ul>
+            <li>React & Vue.js</li>
+            <li>JavaScript ES6+</li>
+            <li>CSS3 & Sass</li>
+            <li>Performance Optimization</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <h3>Landing Pages</h3>
+          <p>High-converting landing pages designed to maximize your marketing campaigns and drive business growth.</p>
+          <ul>
+            <li>Conversion Optimization</li>
+            <li>A/B Testing</li>
+            <li>Analytics Integration</li>
+            <li>Mobile Optimization</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h3>Business Websites</h3>
+          <p>Professional business websites that establish your online presence and help you connect with your customers effectively.</p>
+          <ul>
+            <li>CMS Integration</li>
+            <li>SEO Optimization</li>
+            <li>Contact Forms</li>
+            <li>Maintenance Support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Let's Work Together</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Get In Touch</h3>
+          <p>
+            Ready to bring your digital vision to life? I'd love to hear about your project 
+            and discuss how we can create something amazing together.
+          </p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>Sidsweb01@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-whatsapp"></i>
+              <span>+232 79 72 80 28</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Sierra Leone, Freetown</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://www.tiktok.com/@sids_web01?_r=1&_t=ZM-92JUFUsRsNQ" class="social-link">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-dribbble"></i>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="6fd92621-6670-4638-a060-86d111c8b1f3">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Sid's Web. All rights reserved. Crafted with ❤️ and lots of ☕</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
